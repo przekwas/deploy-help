@@ -7,7 +7,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
     constructor(props: IAppProps) {
         super(props);
 
-        this.state = { blogs: null };
+        this.state = { blogs: [] };
     }
 
     async componentWillMount() {
