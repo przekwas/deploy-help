@@ -19,7 +19,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
     render() {
         return (
             <main className="container">
-                {this.state.blogs.map(blog => (
+                {this.state.blogs.map((blog: any) => (
                     <h1 key={blog.id} className="m-3 text-center text-primary">{blog.title}</h1>
                 ))}
             </main>
